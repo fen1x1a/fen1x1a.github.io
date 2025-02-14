@@ -15,7 +15,7 @@ lang: 'es'
 - **Temas a tratar:** Enumeración, Windows, Active Directory, AS-REP Roasting, DCSync.
 - **OS:** Windows.
 - **Plataforma:** [HackTheBox](https://app.hackthebox.com/machines/212)
-- **Fecha de retiro:** 15/08/2020
+- **Fecha de retiro:** 21/03/2020
 - **IP victima:** 10.10.10.161
 - **IP atacante:** 10.10.14.10
 # Enumeración
