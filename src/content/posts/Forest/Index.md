@@ -11,7 +11,7 @@ lang: 'es'
 
 # Descripción
 
-- **Nivel:** Fácil (Intermedia por el pivesc mi opinion). 
+- **Nivel:** Fácil (Intermedia por el pivesc). 
 - **Temas a tratar:** Enumeración, Windows, Active Directory, AS-REP Roasting, DCSync.
 - **OS:** Windows.
 - **Plataforma:** [HackTheBox](https://app.hackthebox.com/machines/212)
