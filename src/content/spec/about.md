@@ -2,7 +2,7 @@
 
 Hola!! mi nombre es Saul (Aka. Fenixia) tengo 24 años, apasionado de la ciberseguridad y la informatica en general.
 
-En este espacio digital donde comparto mis apuntes sobre laboratorios, pentesting y otros temas fascinantes que exploran el vasto mundo de la ciberseguridad.
+En este espacio comparto mis apuntes sobre laboratorios, pentesting y otros temas.
 
 Actualmente me encuentro preparandome para las certificaciones CPTS y OSCP.
 
@@ -14,4 +14,4 @@ Todo el contenido que hay en está página es con fines educativos y es montando
 
 ---
 
-Sitio creado apartir de este increible template [Fuwari](https://github.com/saicaca/fuwari).
+Sitio creado apartir de este template [Fuwari](https://github.com/saicaca/fuwari).
