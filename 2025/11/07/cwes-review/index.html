@@ -1,0 +1,300 @@
+<!DOCTYPE html><html lang="es" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>CWES Review | Fenixia</title><meta name="author" content="Fenixia"><meta name="copyright" content="Fenixia"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="Review de la certificación CWES de HackTheBox">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CWES Review">
+<meta property="og:url" content="https://fen1x1a.github.io/2025/11/07/cwes-review/index.html">
+<meta property="og:site_name" content="Fenixia">
+<meta property="og:description" content="Review de la certificación CWES de HackTheBox">
+<meta property="og:locale" content="es_ES">
+<meta property="og:image" content="https://fen1x1a.github.io/2025/11/07/cwes-review/CWES.avif">
+<meta property="article:published_time" content="2025-11-07T18:15:03.000Z">
+<meta property="article:modified_time" content="2025-11-10T17:03:43.000Z">
+<meta property="article:author" content="Fenixia">
+<meta property="article:tag" content="HackTheBox">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://fen1x1a.github.io/2025/11/07/cwes-review/CWES.avif"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "CWES Review",
+  "url": "https://fen1x1a.github.io/2025/11/07/cwes-review/",
+  "image": "https://fen1x1a.github.io/2025/11/07/cwes-review/CWES.avif",
+  "datePublished": "2025-11-07T18:15:03.000Z",
+  "dateModified": "2025-11-10T17:03:43.000Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Fenixia",
+      "url": "https://fen1x1a.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/icon.png"><link rel="canonical" href="https://fen1x1a.github.io/2025/11/07/cwes-review/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"No se encontraron resultados para: ${query}","hits_stats":"${hits} artículos encontrados"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: 'Copiado Exitosamente',
+    error: 'Error al Copiar',
+    noSupport: 'Navegador No Compatible'
+  },
+  relativeDate: {
+    homepage: true,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Ahora mismo',
+    min: 'minutos atrás',
+    hour: 'horas atrás',
+    day: 'días atrás',
+    month: 'meses atrás'
+  },
+  copyright: undefined,
+  lightbox: 'medium_zoom',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Cargar Más'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'CWES Review',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-color: #1A1B4ACC;"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.avif" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">Artículos</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">Etiquetas</div><div class="length-num">28</div></a><a href="/categories/"><div class="headline">Categorías</div><div class="length-num">5</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> ~/</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> history</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> cat tags.txt</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> cat categories.txt</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user-secret"></i><span> whoami</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url(/2025/11/07/cwes-review/CWES.avif);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Fenixia</span></a><a class="nav-page-title" href="/"><span class="site-name">CWES Review</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  Volver al Inicio</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> find</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> ~/</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> history</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> cat tags.txt</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> cat categories.txt</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user-secret"></i><span> whoami</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">CWES Review</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Creado</span><time class="post-meta-date-created" datetime="2025-11-07T18:15:03.000Z" title="Creado 2025-11-07 12:15:03">2025-11-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Actualizado</span><time class="post-meta-date-updated" datetime="2025-11-10T17:03:43.000Z" title="Actualizado 2025-11-10 11:03:43">2025-11-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Certificaciones/">Certificaciones</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Vistas del Post:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>Certified Web Exploitation Specialist, también conocida como CWES (anteriormente CBBH), es una certificación completamente centrada en <code>Web Penetration Testing</code>, algo que sabía que necesitaba mejorar y decidí tomar el path que ofrece HackTheBox. Pensé en algún momento en cursar la eWPTX, pero tras ver los cambios que le hizo INE a esta certificación sentí que ya no valía la pena. También me vi influenciado principalmente por <a target="_blank" rel="noopener" href="https://www.youtube.com/@jackie0x17"><code>jackie0x17</code></a>, ya que hablaba bastante bien sobre ella y pues dije: bueno, HackTheBox siempre ha tenido contenido de calidad y retador, así que “¿por qué no?”</p>
+<img src="/2025/11/07/cwes-review/1f50826eb97557267e9bf48728c9874810833481.avif" class="" title="logo.avif">
+
+<h1 id="Temario"><a href="#Temario" class="headerlink" title="Temario"></a>Temario</h1><p>El temario cuenta con un total de 20 módulos. Algo que me gusta de HTB (HackTheBox) es que te obliga a completar el 100% de estos para tener el derecho de presentarte al examen; muy diferente a lo que hace OffSec o INE, donde puedes presentarlo nomás pagando. HTB es diferente, ellos te demuestran que pueden enseñarte algo nuevo o alguna técnica que desconocías.</p>
+<p>Los primeros módulos empiezan desde lo más básico (cómo funciona una petición web, qué es una aplicación web, etc.) hasta empezar a ver concatenación de ataques (como un ejemplo, un XSS con CSRF). Esto hace que se sienta natural el crecimiento de la dificultad.</p>
+<p>La gran mayoría de estos módulos son completamente prácticos; a lo largo de cada uno vas a tener múltiples laboratorios que tendrás que resolver y practicar lo que previamente se te enseñó:</p>
+<img src="/2025/11/07/cwes-review/c16d8e1f07981e10cdd7c802a4fae91ed1de431f.avif" class="" title="Pastedimage20251107144952.avif">
+
+<p>También en la mayoría existe un pequeño “CTF” bajo el nombre de “Skills Assessment”, aquí pones a prueba todo lo visto. Si cuentas con la suscripción “Silver Annual” del Academy, podrás ver paso a paso cómo se resuelve este y todos los retos. Yo recomiendo que no vean la solución, al menos que ya lleves varias horas estancado. La mera verdad, intenten romperse la cabeza un poco resolviéndolo por su propia cuenta; esto lo van a agradecer al momento del examen.</p>
+<blockquote>
+<p>Una cosa que recomiendo: si realizaron los módulos antes del 1 de octubre de 2025, hay varios Skills Assessment que actualizaron. Por ejemplo, el de “SQL Injection Fundamentals” antes estaba realmente para rellenar y el de ahorita está muy bueno. Y también para la gente que lo hizo cuando se llamaba CBBH, no estaría mal que le dieran un vistazo a los módulos que cambiaron, están muy buenos la verdad (más que nada por el OWASP de APIs que agregaron).</p>
+</blockquote>
+<h1 id="Examen"><a href="#Examen" class="headerlink" title="Examen"></a>Examen</h1><p>El examen es bastante duro, tiene una duración de 7 días y en ese lapso tienes que conseguir un mínimo de 80 puntos, realizar el reporte y subirlo en la plataforma (<strong>todo eso dentro de esos 7 días</strong>).</p>
+<p>La forma de obtener los puntos es mediante flags. En total son 5 sitios web a comprometer, cada uno cuenta con 2 flags (cada flag tiene un puntaje diferente, puede haber flags de 5 puntos o de 15 puntos) sumando un total de 10 flags (100 puntos en total). El panel del examen te indica dónde están las flags y su puntaje (esto por si existe la duda de cómo llegar a ellas, HTB te indica su ubicación).</p>
+<p>Te conectas a través de una VPN y puedes reiniciar el laboratorio cuantas veces quieras (esto por si notas algún fallo en alguna página o crees que algo no va bien). Incluso si un servidor VPN te está dando problemas, no hay ningún inconveniente en cambiarte a otro.</p>
+<p>No hay restricción de herramientas, es un examen que simula un <strong>Pentest Real</strong>. ¿Quieres utilizar BurpSuite Pro? No hay problema. ¿Quieres aventarle un Nessus? Sin problemas, adelante (mientras no te salgas del scope, porque te dan uno como si fuera una auditoría real).</p>
+<p><strong>No es proctored</strong>, así que puedes hacerlo cuando tú quieras en el momento que tú quieras, sin sentir esos nervios de un examen vigilado (se siente feo y hasta sientes que la persona que está detrás te está juzgando la verdad jajaja).</p>
+<p><strong>Si no llegas a obtener los 80 puntos</strong>, tienes que realizar el reporte para que te den la segunda oportunidad que viene con tu voucher (sí, el voucher incluye 2 oportunidades, pero con la condición de que si no llegas al puntaje mínimo aprobatorio, tienes que realizar el reporte de todas formas, y este debes subirlo dentro del lapso de los 7 días que te dan de laboratorio en el panel del examen).</p>
+<h2 id="Reporte"><a href="#Reporte" class="headerlink" title="Reporte"></a>Reporte</h2><p>Ahora bien, el reporte. Al momento de empezar el examen, te proporcionan una plantilla de Word, aunque también existe la posibilidad de hacerlo en <a target="_blank" rel="noopener" href="https://htb.sysreptor.com/htb/signup/">Sysreptor</a>, que en tema de comodidad es lo mejor, ya que automatizas muchas partes y te centras solamente en la redacción sin perder el tiempo con formato y cosas así.</p>
+<p>El reporte tiene que estar completamente en inglés y si haces un mal trabajo te pueden llegar a suspender y tendrás que esperar hasta que te habiliten la segunda oportunidad.</p>
+<p>Si no tienen idea de cómo redactarlo, miren con cuidado el módulo “Bug Bounty Hunting Process”, te proporcionan 3 ejemplos y recuerden que debe estar con el CVSS 3.1.</p>
+<p>Y recuerden subirlo en el portal del examen (bajo el formato que se les solicita, en mi caso fue en PDF, creo que se puede subir también en markdown pero ahí desconozco). Una vez lo subes no hay vuelta atrás y el examen se termina, así que mucho cuidado con eso.</p>
+<h1 id="Comparacion"><a href="#Comparacion" class="headerlink" title="Comparación"></a>Comparación</h1><p>Me encantaría poder comparar esta certificación con otras que hay en el mercado, pero por desgracia o para mi buena suerte, esta es la única que tengo centrada en web (hasta la fecha de redacción de este artículo). Pero les comparto material de personas que la han comparado con la OSWA de OffSec y la eWPTX de INE:</p>
+<ul>
+<li><strong>eWPTX vs CWES&#x2F;CBBH (Minuto <code>38:30</code>)</strong></li>
+</ul>
+<div class="video-container"><iframe src="https://www.youtube.com/embed/RxXEhT-kIwI" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
+
+<ul>
+<li><strong>OSWA vs CWES</strong></li>
+</ul>
+<div class="video-container"><iframe src="https://www.youtube.com/embed/z7ye5T4JtBY" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
+
+<blockquote>
+<p>Ahora bien, si me lo permiten comparar su dificultad contra la OSCP (muchas personas me han preguntado cuál es más difícil), el CWES sin duda alguna tiene mayor dificultad, tanto por el temario, como por el examen y el reporte.</p>
+</blockquote>
+<h1 id="Experiencia-Personal"><a href="#Experiencia-Personal" class="headerlink" title="Experiencia Personal"></a>Experiencia Personal</h1><h2 id="Temario-1"><a href="#Temario-1" class="headerlink" title="Temario"></a>Temario</h2><p>El temario lo empecé a repasar a mediados del mes de julio (digo repasar porque mucho del temario del CWES se comparte con el del CPTS, y estuve haciendo ese path, pero mis apuntes eran horribles, así que decidí empezar desde 0). Lo terminé a principios del mes de agosto, pero como no me sentía preparado para presentarme al examen, decidí repasarlo todo desde 0 y mejorar mis apuntes, creando así una “Cheat Sheet” con la siguiente estructura:</p>
+<img src="/2025/11/07/cwes-review/facee30b1f1c26098b5d0b9c1dd552731138500c.avif" class="" title="Pastedimage20251107191840.avif">
+
+<p>Cada apunte se basa principalmente en “Cómo enumerar o detectar x” y el paso a paso de cómo explotarlo. Eso sí, agregué todo lo visto en los “Skills Assessment”. A simple vista se ven pocos apuntes, pero es mucho más de lo que parece.</p>
+<p>Ahora bien, en este segundo repaso me centré mucho en los “Skills Assessment”. Mi idea era: “Si puedo hacerlo con solo ver mis apuntes, es que estoy listo para ir al siguiente tema”. Así hasta llegar a finales de agosto.</p>
+<h2 id="Practica-antes-del-examen"><a href="#Practica-antes-del-examen" class="headerlink" title="Práctica antes del examen"></a>Práctica antes del examen</h2><p>Ya con el segundo repaso finalizado, fui a hacer la fortaleza de Akerva, ya que todo el mundo la recomendaba para darme una idea de cómo era el examen, y me tardé 2 días en resolverla completamente. No es demasiado complicada, una vez le entiendes hacia dónde tira Akerva se resuelve rápidamente:</p>
+<img src="/2025/11/07/cwes-review/ef0a6d7890b996b3e99bc0d5e305120f0003f893.avif" class="" title="Pastedimage20251107192919.avif">
+
+<blockquote>
+<p>Mi opinión sobre Akerva es que no se parece mucho a lo que viene siendo el examen, pero es bastante interesante y divertida, me gustó mucho y sirve para relajarse un poco.</p>
+</blockquote>
+<p>Con Akerva pwned, decidí realizar algunas máquinas que creó Jackie0x17 en la plataforma de <a target="_blank" rel="noopener" href="https://vulnyx.com/">VulNyx</a>, basadas en el temario del CWES&#x2F;CBBH, pero solamente centrándome en la parte web y el ingreso al sistema, ya que la parte de escalada de privilegios no se enseña en el CWES (por ende no debería venir en el examen). Ya con algo de práctica en estas máquinas, decidí que ya era momento de presentarme.</p>
+<h2 id="Examen-1"><a href="#Examen-1" class="headerlink" title="Examen"></a>Examen</h2><p>Lo empecé un jueves a las 11 de la mañana. El día anterior me centré en descansar, no pensar en nada relacionado, principalmente para estar relajado. Una vez presioné el botón “Iniciar examen”, empezó la fiesta:</p>
+<ul>
+<li>Día 1: 2 flags.</li>
+<li>Día 2: 1 flag.</li>
+<li>Día 3: 2 flags.</li>
+<li>Día 4: 3 flags.</li>
+<li>Día 5, 6: Enfoque completo al reporte.</li>
+</ul>
+<p>El examen es increíble, te reta y te obliga a concatenar vulnerabilidades de alguna u otra manera, cosa que a mí me encanta. El único problema que tuve fue en los primeros 2 días: 2 sitios me estaban marcando un error mientras los enumeraba. Pensé que esto era algo intencional, pero no era así. Por donde estaba marcando el error eran las 2 vías que había pensado para llegar a la siguiente flag, y no me di cuenta de este problema, confiando en que mi enumeración estaba correcta, pero fue todo lo contrario. Así que, gente, si ven algo que creen que esté fallando, reinicien el entorno o cambien de VPN, no hay ningún problema.</p>
+<p>Ya quitando el tema de este problema y llegando al puntaje, dejé el lab ahí y me fui completamente a realizar el reporte. Todavía me quedaban 2 días y medio, me fui más tranquilo a la redacción. Lo terminé faltando solo 12 horas para que finalizara el examen, así que decidí subirlo (mi reporte fue un total de 90 páginas).</p>
+<p>HTB dice que se pueden tardar 20 días laborables en darte los resultados de sus exámenes, en mi caso ¡fueron 7 horas!</p>
+<img src="/2025/11/07/cwes-review/afe8832c8df407b3d3853d958cf335f5e23d13d4.avif" class="" title="Pastedimage20251107212133.avif">
+
+<blockquote>
+<p>Esto es posiblemente debido a que hice el examen cuando estaban haciendo el cambio del CBBH a CWES, así que si con ustedes se tardan más, no se desesperen, es normal.</p>
+</blockquote>
+<img src="/2025/11/07/cwes-review/e49c1de2415c76b75770e5e624a63edf3a545d45.avif" class="" title="1757531925520.avif">
+
+<h1 id="Consejos"><a href="#Consejos" class="headerlink" title="Consejos"></a>Consejos</h1><p>Ahora lo que a todos nos interesa, qué consejos doy para los que se quieran presentar:</p>
+<h2 id="Pre-Examen"><a href="#Pre-Examen" class="headerlink" title="Pre-Examen"></a>Pre-Examen</h2><ol>
+<li><p>Haz los módulos a conciencia. No se sientan mal porque no han logrado algún “Skills Assessment”, ve a tu ritmo y avanza poco a poco. Lo que importa es que vas a estar aprendiendo, no todos lo hacemos al mismo ritmo, así que tómate tu tiempo.</p>
+</li>
+<li><p>Crea apuntes útiles y fáciles de revisar, para que en un futuro (no solo hablando del examen, también en algún pentest) te sirvan, ya que son para toda la vida. Yo creé una “Cheat Sheet” que es con lo que me siento más cómodo, tal vez contigo sea más útil una “Checklist”.</p>
+</li>
+<li><p>Retroalimenta tus apuntes con la “Cheat Sheet” que te proporciona HTB.</p>
+</li>
+<li><p><strong>El temario es el único material que te va a permitir aprobar el examen</strong>. No hay otro recurso extra que vayas a necesitar, HTB diseña el examen a partir de su temario (no como OffSec que en el OSCP te enseñan una cosa y en el examen, si no has resuelto mínimo unas 50 máquinas, no lo apruebas).</p>
+</li>
+<li><p>Si quieres practicar, haz la fortaleza de Akerva, y si quieres más, haz las máquinas de Jackie0x17 que menciona en su video:</p>
+</li>
+</ol>
+<div class="video-container"><iframe src="https://www.youtube.com/embed/wZljfqtW4JI" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
+
+<ol start="6">
+<li>Mira más reviews de esta certificación. Comparto una lista de algunas que vi en su momento:</li>
+</ol>
+<ul>
+<li><strong>Review de Jackie0x17</strong></li>
+</ul>
+<div class="video-container"><iframe src="https://www.youtube.com/embed/4y_eZJ0VkmA" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
+
+<ul>
+<li><strong>Review de D4rkAce</strong></li>
+</ul>
+<div class="video-container"><iframe src="https://www.youtube.com/embed/c5XM3rpthus" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
+
+<ul>
+<li><strong>Review de R4ptor</strong></li>
+</ul>
+<div class="video-container"><iframe src="https://www.youtube.com/embed/Zcbcsi1cvmA" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
+
+<ol start="7">
+<li>Practica con Sysreptor antes del examen, mira cómo funciona, cómo agregar imágenes, código, títulos, etc.</li>
+</ol>
+<blockquote>
+<p>Si te interesa montarlo en local para experimentar con él, recomiendo que mires el siguiente video de ShellDredd:</p>
+<div class="video-container"><iframe src="https://www.youtube.com/embed/XWWXtvFi498" frameborder="0" loading="lazy" allowfullscreen></iframe></div></blockquote>
+<h2 id="Examen-2"><a href="#Examen-2" class="headerlink" title="Examen"></a>Examen</h2><ol>
+<li><p>Enumera todo y duda de todo, de cada botón y cada cosa que veas.</p>
+</li>
+<li><p>Si crees que está fallando algún sitio, reinicia el entorno o cambia de VPN (no es bonito perder 2 días por un error de laboratorio).</p>
+</li>
+<li><p>No te enfoques solo en un sitio web, recuerda que hay más y si te sientes estancado en uno, salta a los otros. Capaz y en un futuro se te ocurre algo.</p>
+</li>
+<li><p>Sal a despejarte, recuerda que tienes 7 días y eso es tiempo suficiente para obtener todas las flags. Así que si te sientes muy bloqueado, sal a caminar, aléjate unas horas del ordenador y cuando te sientas con la batería recargada vuelve a darle.</p>
+</li>
+<li><p>Puedes usar IA sin problemas, pero recomiendo que se abstengan. Usen la cabeza y sus notas, es el mejor recurso que hay.</p>
+</li>
+<li><p>No utilicen escáneres automatizados. Claro, están completamente permitidos, pero es muy probable que te reporten cosas que no te llevarán a los objetivos.</p>
+</li>
+<li><p>BurpSuite y cURL van a ser tus mejores amigos.</p>
+</li>
+<li><p>Puedes ir a ver los módulos de HTB Academy sin ninguna restricción, así que si encontraste una vulnerabilidad y no recuerdas cómo explotarla, ve a verla en el temario.</p>
+</li>
+<li><p>Usa Sysreptor para el reporte.</p>
+</li>
+<li><p>Ve realizándo el reporte a la par que vas resolviendo el examen (puede que te ayude a despejar la mente).</p>
+</li>
+<li><p>Asegúrate de que tu reporte pueda ser replicable por cualquiera, hasta incluso una persona que no es del área técnica.</p>
+</li>
+<li><p>No menosprecien el reporte, es muy importante que lo hagan a conciencia. Te lo revisan; en mi caso me dieron varios consejos para la redacción de reportes.</p>
+</li>
+<li><p>Este va con el punto anterior: ellos me recomendaron que a todas las imágenes que coloques les pongas una pequeña descripción.</p>
+</li>
+<li><p>El examen es más fácil de lo que piensas. Sí tiene su grado de complejidad, por algo dan 7 días, pero tampoco es imposible.</p>
+</li>
+</ol>
+<h1 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusión"></a>Conclusión</h1><p>Ya para finalizar el artículo, quería mencionar que HTB con el Academy está agarrando una fuerte posición en el mercado, entregando contenido de calidad a un precio accesible. En parte ya hacía falta que alguien le plantara cara a OffSec con tanta fuerza. Voy a seguir consumiendo contenido en HTB Academy, y tal vez alguna otra certificación por parte de ellos (posiblemente el CAPE o el CWEE en un futuro). Sin nada más que agregar, si estás pensando en presentarte a esta certificación, déjame desearte mucha suerte y espero que esta review&#x2F;experiencia te haya sido de utilidad.</p>
+<img src="/2025/11/07/cwes-review/cert-fisica.avif" class="" title="Cert fisica">
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Autor: </span><span class="post-copyright-info"><a href="https://fen1x1a.github.io">Fenixia</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Enlace: </span><span class="post-copyright-info"><a href="https://fen1x1a.github.io/2025/11/07/cwes-review/">https://fen1x1a.github.io/2025/11/07/cwes-review/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Aviso de Copyright: </span><span class="post-copyright-info">Todos los artículos en este blog están licenciados bajo <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> a menos que se indique lo contrario.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/HackTheBox/">HackTheBox</a></div><div class="post-share"><div class="social-share" data-image="/2025/11/07/cwes-review/CWES.avif" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2025/11/18/SQLi-Laboratorio-1/" title="SQL Injection Apprentice"><img class="cover" src="/2025/11/18/SQLi-Laboratorio-1/PortSwiggerLabs.avif" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">Anterior</div><div class="info-item-2">SQL Injection Apprentice</div></div><div class="info-2"><div class="info-item-1">Resolución de los laboratorios “apprentice” SQLi de PortSwigger SQL injection vulnerability in WHERE clause allowing retrieval of hidden dataInstrucciones: This lab contains a SQL injection vulnerability in the product category filter. When the user selects a category, the application carries out a SQL query like the following:SELECT * FROM products WHERE category = &#39;Gifts&#39; AND released = 1To solve the lab, perform a SQL injection attack that causes the application to display one or m...</div></div></div></a><a class="pagination-related" href="/2025/10/05/bloodhound-ingestor/" title="Bloodhound Ingestor"><img class="cover" src="/2025/10/05/bloodhound-ingestor/bloodhound.avif" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">Siguiente</div><div class="info-item-2">Bloodhound Ingestor</div></div><div class="info-2"><div class="info-item-1">Existen multiples ingestores para Bloodhound siendo el mas popular bloodhound-python, todo este articulo muestra tanto para BloodHound-Legacy tanto para Bloodhound-CE (Recomendación dejar de utilizar BloodHound-Legacy y centrarse en BloodHound-CE) RustHoundBloodhound-python pero en Rust, proyecto en constante actualización y disponible en el siguiente Repositorio.Uso básico: 123./rusthound -d hokkaido-aerospace.com -u Hazel.Green -p &#x27;pass&#x27; -z# Para BloodHound-CErusthound-ce -d lab.t...</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.avif" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Fenixia</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">Artículos</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">Etiquetas</div><div class="length-num">28</div></a><a href="/categories/"><div class="headline">Categorías</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://www.linkedin.com/in/saul-ochoa-864135232/"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Anuncios</span></div><div class="announcement_content">- Siguen existiendo algunos errores de visualizacion en algunos writeups pronto estare corrigiendo este problema.
+</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contenidos</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Temario"><span class="toc-number">1.</span> <span class="toc-text">Temario</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Examen"><span class="toc-number">2.</span> <span class="toc-text">Examen</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Reporte"><span class="toc-number">2.1.</span> <span class="toc-text">Reporte</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Comparacion"><span class="toc-number">3.</span> <span class="toc-text">Comparación</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Experiencia-Personal"><span class="toc-number">4.</span> <span class="toc-text">Experiencia Personal</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Temario-1"><span class="toc-number">4.1.</span> <span class="toc-text">Temario</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Practica-antes-del-examen"><span class="toc-number">4.2.</span> <span class="toc-text">Práctica antes del examen</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Examen-1"><span class="toc-number">4.3.</span> <span class="toc-text">Examen</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Consejos"><span class="toc-number">5.</span> <span class="toc-text">Consejos</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Pre-Examen"><span class="toc-number">5.1.</span> <span class="toc-text">Pre-Examen</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Examen-2"><span class="toc-number">5.2.</span> <span class="toc-text">Examen</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Conclusion"><span class="toc-number">6.</span> <span class="toc-text">Conclusión</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Publicaciones Recientes</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/03/09/SQLi-Laboratorio-2/" title="SQL Injection Apprentice parte 2"><img src="/2026/03/09/SQLi-Laboratorio-2/PortSwiggerLabs.avif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SQL Injection Apprentice parte 2"/></a><div class="content"><a class="title" href="/2026/03/09/SQLi-Laboratorio-2/" title="SQL Injection Apprentice parte 2">SQL Injection Apprentice parte 2</a><time datetime="2026-03-09T22:54:41.000Z" title="Creado 2026-03-09 16:54:41">2026-03-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/02/02/OnePrompttoRuleThemAll/" title="One Prompt to Rule Them All - AI HTB Cyber Apocalypse 2025"><img src="/2026/02/02/OnePrompttoRuleThemAll/Cyber2025-1.avif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="One Prompt to Rule Them All - AI HTB Cyber Apocalypse 2025"/></a><div class="content"><a class="title" href="/2026/02/02/OnePrompttoRuleThemAll/" title="One Prompt to Rule Them All - AI HTB Cyber Apocalypse 2025">One Prompt to Rule Them All - AI HTB Cyber Apocalypse 2025</a><time datetime="2026-02-02T07:28:30.147Z" title="Creado 2026-02-02 01:28:30">2026-02-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/02/02/Yadis/" title="Yadis"><img src="/2026/02/02/Yadis/Yadis.avif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Yadis"/></a><div class="content"><a class="title" href="/2026/02/02/Yadis/" title="Yadis">Yadis</a><time datetime="2026-02-02T07:28:30.140Z" title="Creado 2026-02-02 01:28:30">2026-02-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/02/02/SAU/" title="SAU"><img src="/img/default_prev.avif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SAU"/></a><div class="content"><a class="title" href="/2026/02/02/SAU/" title="SAU">SAU</a><time datetime="2026-02-02T07:28:30.110Z" title="Creado 2026-02-02 01:28:30">2026-02-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/02/02/Cicada/" title="Cicada"><img src="/2026/02/02/Cicada/Cicada.avif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Cicada"/></a><div class="content"><a class="title" href="/2026/02/02/Cicada/" title="Cicada">Cicada</a><time datetime="2026-02-02T07:28:30.102Z" title="Creado 2026-02-02 01:28:30">2026-02-02</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent;"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2024 - 2026 By Fenixia</span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Modo de Lectura"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Alternar entre Modo Claro y Oscuro"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Alternar entre Una y Dos Columnas"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Configuración"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Tabla de Contenidos"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Volver Arriba"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><div class="js-pjax"></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="1" zIndex="-1" count="150" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">find</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Cargando Base de Datos</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Buscar" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
